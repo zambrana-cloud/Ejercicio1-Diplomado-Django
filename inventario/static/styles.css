@@ -1,0 +1,90 @@
+/* inventario/static/inventario/styles.css */
+
+/* Reset básico para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Color de fondo suave */
+    color: #333; /* Color de texto oscuro para buen contraste */
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Título */
+h1 {
+    color: #007bff; /* Azul suave para el título */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Formulario de búsqueda */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #555;
+    margin-right: 10px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff; /* Botón azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+/* Lista de categorías */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f8f9fa; /* Fondo gris claro para los items */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+ul li:hover {
+    background-color: #e2e6ea; /* Fondo ligeramente más oscuro al pasar el mouse */
+}
+
+/* Mensaje de no encontrado */
+.empty-message {
+    color: #888;
+    font-size: 1.2rem;
+}

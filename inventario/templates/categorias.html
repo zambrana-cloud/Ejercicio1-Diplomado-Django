@@ -1,0 +1,35 @@
+<h1>Categorias</h1>
+
+<ul>
+    {% for categoria in categorias %}
+    <li>{{ categoria.nombre }}</li>
+    {% endfor %}
+</ul>
+<!-- inventario/templates/inventario/categoria_list.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Categorías</title>
+    
+</head>
+<body>
+    <h1>Categorías</h1>
+    
+    <!-- Formulario para filtrar por nombre -->
+    <form method="get">
+        <label for="nombre">Buscar por nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="{{ request.GET.nombre }}">
+        <button type="submit">Filtrar</button>
+    </form>
+
+    <!-- Lista de categorías -->
+    <ul>
+        {% for categoria in categorias %}
+            <li>{{ categoria.nombre }}</li>
+        {% empty %}
+            <li>No se encontraron categorías.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
